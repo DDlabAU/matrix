@@ -1,7 +1,8 @@
 matrix
 ======
+5 8x8 LED matrixes in series, controlled by an arduinoProMicro displays variable text depending on day/time determined by an RTCmodule on a seperate proMicro
 
-5 8x8 LED matrixes from [Linksprite](http://linksprite.com/wiki/index.php5?title=LED_Matrix_Kit) coupled in series, writing some sample text.
+The 8x8 LED matrixes are from [Linksprite](http://linksprite.com/wiki/index.php5?title=LED_Matrix_Kit)
 
 Components
 ==========
