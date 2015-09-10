@@ -87,7 +87,8 @@ void Write_Max7219(unsigned char address,unsigned char dat, int csPin)
 void Init_MAX7219(int csPin)
 {
  Write_Max7219(0x09, 0x00, csPin);       //decoding ：BCD
- Write_Max7219(0x0a, 0x03, csPin);       //brightness
+ //Write_Max7219(0x0a, 0x03, csPin);       //brightness
+ Write_Max7219(0x0a, 0x0F, csPin);       //brightness
  Write_Max7219(0x0b, 0x07, csPin);       //scanlimit；8 LEDs
  Write_Max7219(0x0c, 0x01, csPin);       //power-down mode：0，normal mode：1
  Write_Max7219(0x0f, 0x00, csPin);       //test display：1；EOT，display：0
@@ -125,7 +126,7 @@ delay(50);
 for(i=1;i<9;i++) Write_Max7219(i,disp1[16][i-1],matrix4_CS); //G
 delay(50);
 for(i=1;i<9;i++) Write_Max7219(i,disp1[37][i-1],matrix5_CS); //!
-delay(250);
+delay(500);
 
 clear(50);
 
@@ -139,7 +140,7 @@ delay(50);
 for(i=1;i<9;i++) Write_Max7219(i,disp1[15][i-1],matrix4_CS); //F
 delay(50);
 for(i=1;i<9;i++) Write_Max7219(i,disp1[38][i-1],matrix5_CS); //?
-delay(250);
+delay(500);
 
 
 clear(50);
@@ -147,7 +148,7 @@ clear(50);
 //DDLAB
 ddlab(50);
 
-delay(250);
+delay(500);
 
 clear(50);
 
@@ -163,7 +164,7 @@ for(i=1;i<9;i++) Write_Max7219(i,disp1[32][i-1],matrix4_CS); //W
 delay(50);
 for(i=1;i<9;i++) Write_Max7219(i,disp1[37][i-1],matrix5_CS); //!
 
-delay(250);
+delay(500);
 
 
 }
