@@ -13,4 +13,5 @@ Components
 what?!
 ======
 
-The modules share VCC, GND, DATA, and CLK pins and have seperate CS (Chip select) pins.
+The 8x8 led modules share VCC, GND, DATA, and CLK pins and have seperate CS (Chip select) pins.
+The RTC module is thoroughly examined [here](https://learn.adafruit.com/ds1307-real-time-clock-breakout-board-kit)
