@@ -22,6 +22,7 @@ void setup()
 }
 void loop()
 {
+	delay(500);
 	DateTime now = RTC.now();
 	weekDay = now.dayOfWeek();
 	currentHour = now.hour();
@@ -52,7 +53,7 @@ void loop()
 	    break;
 
 	    case 3:
-        Serial.println("Tirsdag");
+        Serial.println("Onsdag");
 	    if (currentHour>=10 && currentHour<14)
 	    {
 	      digitalWrite(buttonPin, HIGH);
